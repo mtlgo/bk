@@ -18,6 +18,6 @@ $ npm run remote --docker-host=[host-ip]
 $ docker build -t swarm-ui .
 
 # Run a swarm-ui container
-$ docker run -it -v /var/run/docker.sock:/var/run/docker.sock -p 8080:3000 swarm-ui
+$ docker run -d -v /var/run/docker.sock:/var/run/docker.sock -p 8080:3000 swarm-ui
 ```
  
