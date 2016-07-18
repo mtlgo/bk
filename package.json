@@ -1,10 +1,10 @@
 {
   "name": "docker-swarm-ui",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "",
   "main": "app.js",
-  "config":{
-      "host":"10.0.75.2"
+  "config": {
+    "host": "10.0.75.2"
   },
   "scripts": {
     "start": "node app.js",
@@ -19,8 +19,11 @@
   "license": "ISC",
   "dependencies": {
     "cross-env": "^2.0.0",
-    "dockerode": "^2.2.10",
+    "dockerode": "github:apocas/dockerode",
     "express": "^4.14.0",
     "lodash": "^4.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2"
   }
 }
