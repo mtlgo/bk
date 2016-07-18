@@ -26,12 +26,12 @@
             "type": "node",
             "request": "attach",
             "port": 5858,
-            "address": "192.168.0.45",
+            "address": "cluster-docker.local",
             "restart": false,
             "sourceMaps": false,
             "outDir": null,
             "localRoot": "${workspaceRoot}",
-            "remoteRoot": null
+            "remoteRoot": "/src"
         },
         {
             "name": "Attach to Process",
