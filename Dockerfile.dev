@@ -9,5 +9,5 @@ RUN apk add --no-cache git
 
 RUN npm install
 
-EXPOSE 3000
-CMD ["npm", "start"]
+EXPOSE 3000 5858
+CMD ["./node_modules/.bin/nodemon", "--debug","app.js"]
