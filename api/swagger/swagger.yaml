@@ -3,9 +3,9 @@ info:
   version: "0.0.2"
   title: Docker Swarm UI
 # during dev, should point to your local machine
-host: localhost:10010
+host: localhost:3000
 # basePath prefixes all resource paths 
-basePath: /
+basePath: /api
 # 
 schemes:
   # tip: remove http to make production-grade
