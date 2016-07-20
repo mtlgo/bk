@@ -22,7 +22,7 @@ $ docker run -d -v /var/run/docker.sock:/var/run/docker.sock -p 8080:3000 swarm-
 ```
 
 ## Development
-### Debug
+### Debug Docker container
 ```bash
 # Build swarm-ui debug image
 $ docker build -f Dockerfile.dev -t swarm-ui:dev .
@@ -30,4 +30,15 @@ $ docker build -f Dockerfile.dev -t swarm-ui:dev .
 # Run a swarm-ui container in debug mode
 $ docker run -d -v /var/run/docker.sock:/var/run/docker.sock -p 8080:3000 -p 5858:5858 swarm-ui:dev
 ```
- 
+
+### Vizualize Swarm-ui Api
+Navigate to /docs
+
+### Edit Swagger Api
+```bash
+# Install swagger via npm
+$ npm install -g swagger
+
+# Edit the api
+$ swagger project edit
+```
