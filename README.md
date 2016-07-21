@@ -1,4 +1,17 @@
 # SwarmUI
+Swarm-ui allows you to vizualize your swarm cluster in seconds ! Just spin the container on your Swarm Host Manager host and you're good to go !
+
+## Getting Started
+There are currently 2 tags for our containers:
+  * `mtlgo/swarmui` sticks on the master branch
+  * `mtlgo/swarmui:debug` sticks on the dev branch and enable remote debugging
+
+To run Swarm-UI on your swarm cluster 
+
+```bash
+$ docker run -d -v /var/run/docker.sock:/var/run/docker.sock -p 8080:3000 mtlgo/swarmui
+```
+
 
 ## Monitor the host engine
 ```bash
