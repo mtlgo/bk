@@ -2,13 +2,16 @@
   "name": "docker-swarm-ui",
   "version": "0.0.2",
   "description": "",
-  "main": "app.js",
+  "main": "server/server.js",
   "config": {
     "host": "10.0.75.2"
   },
   "scripts": {
-    "start": "node app.js",
-    "remote": "node app.js --remote",
+    "start": "node server/server.js",
+    "remote": "node server/server.js --remote",
+    "debug":  "nodemon --debug server/server.js",
+    "api:edit": "set swagger_swagger_fileName=server/api/swagger/swagger.yaml&& npm run swagger:edit",
+    "swagger:edit": "swagger project edit",
     "test": "swagger project test"
   },
   "author": "",
@@ -28,6 +31,7 @@
   "devDependencies": {
     "nodemon": "^1.9.2",
     "should": "^7.1.0",
-    "supertest": "^1.0.0"
+    "supertest": "^1.0.0",
+    "swagger": "^0.7.5"
   }
 }
