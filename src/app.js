@@ -1,13 +1,18 @@
 var SwaggerExpress = require('swagger-express-mw');
 var SwaggerUi = require('swagger-tools/middleware/swagger-ui');
-var app = require('express')();
+var express = require('express');
+var app = express();
 var path = require('path');
 module.exports = app;
 
 var config = {
-  appRoot: __dirname
+  appRoot: path.join(__dirname,"/server")
 };
 
+app.use(express.static(__dirname + '/client'));
+app.get('/', function(req, res){
+  res.redirect('/index.html');
+});
 SwaggerExpress.create(config, function(err, swaggerExpress) {
   if (err) { throw err; }
 
@@ -17,4 +22,5 @@ SwaggerExpress.create(config, function(err, swaggerExpress) {
   swaggerExpress.register(app);
   var port = process.env.PORT || 3000;
   app.listen(port);
+
 });
