@@ -1,3 +1,4 @@
+![](https://mtlgo.visualstudio.com/_apis/public/build/definitions/720aff32-066a-40fd-b84d-c388579e4139/1/badge)
 # SwarmUI
 Swarm-ui allows you to vizualize your swarm cluster in seconds ! Just spin the container on your Swarm Host Manager host and you're good to go !
 
