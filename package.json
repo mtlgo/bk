@@ -4,7 +4,10 @@
   "description": "",
   "main": "src/app.js",
   "config": {
-    "host": "10.0.75.2"
+    "docker":{
+      "host": "10.0.0.10",
+      "port": "4243"
+    }
   },
   "scripts": {
     "start": "node src/app.js",
