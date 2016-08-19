@@ -26,7 +26,7 @@
             "type": "node",
             "request": "attach",
             "port": 5858,
-            "address": "cluster-docker.local",
+            "address": "10.0.0.10",
             "restart": false,
             "sourceMaps": false,
             "outDir": null,
