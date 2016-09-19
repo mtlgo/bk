@@ -1,3 +1,4 @@
+![](https://mtlgo.visualstudio.com/_apis/public/build/definitions/720aff32-066a-40fd-b84d-c388579e4139/1/badge)
 # SwarmUI
 Swarm-ui allows you to vizualize your swarm cluster in seconds ! Just spin the container on your Swarm host manager and you're good to go !
 
@@ -15,10 +16,13 @@ npm install
 npm start
 ```
 
-## Monitor a remote host (*Docker For Windows)
+## Monitor a local host by IP and Port
 ```bash
 npm install
 npm run remote --docker-host=[host-ip]
+
+# Or Debug
+npm run debug --docker-host=[host-ip] --docker-port=[host-docker-port]
 ```
 
 ## Development
