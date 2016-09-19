@@ -1,3 +1,5 @@
+'use strict';
+
 var SwaggerExpress = require('swagger-express-mw');
 var SwaggerUi = require('swagger-tools/middleware/swagger-ui');
 var express = require('express');

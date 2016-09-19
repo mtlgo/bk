@@ -16,10 +16,13 @@ npm install
 npm start
 ```
 
-## Monitor a remote host (*Docker For Windows)
+## Monitor a local host by IP and Port
 ```bash
 npm install
 npm run remote --docker-host=[host-ip]
+
+# Or Debug
+npm run debug --docker-host=[host-ip] --docker-port=[host-docker-port]
 ```
 
 ## Development
