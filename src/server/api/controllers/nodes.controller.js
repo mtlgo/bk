@@ -5,6 +5,7 @@ var docker;
 function init(env) {
     let host = env.npm_config_docker_host;
     let port = env.npm_config_docker_port;
+    let docker_machine = env.npm_config_docker_machine;
     docker = new DockerService(host,port);
 }
 
